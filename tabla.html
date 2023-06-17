@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <title>Tabla en Html</title>
+</head>
+
+<body onclick="PlayAudio()">
+    <div>
+        <h1 class="titulo">Inscritos en la pagina</h1>
+        <div class="contenedorimagen">
+            <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/" target="_blank">
+                <img class="imagen" src="./assets/img/sena.png" alt="sergio.png">
+            </a>
+        </div>
+        <hr>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="pagina2.html">Inicio</a></li>
+                    <li><a href="tabla.html">Tablas</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <style>
+            table {
+                align-items: center;
+                margin: 15px 40%
+            }
+            .copy{
+                background-color: #2ea81e;
+                text-align: center;
+                color:white;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2em;
+            }
+        </style>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Edad</th>
+                    <th>Sexo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Villamil</td>
+                    <td>18</td>
+                    <td>Masculino</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Juan</td>
+                    <td>Perez</td>
+                    <td>40</td>
+                    <td>Masculino</td>
+                </tr>
+            </tbody>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Mariana</td>
+                    <td>Rodrigez</td>
+                    <td>65</td>
+                    <td>Femenino</td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <footer class="copy">
+                <p>&copy Derechos Reservados Grupo de Analisis y Dllo SAS Bogota - 2023</p>
+            </footer>
+        </div>
+        <audio id="musical" loop>
+            <source src="assets/audio/instrumental.mp3" type="audio/mpeg">
+            Este navegador no acepta formatos de audio
+        </audio>
+        <script>
+            function PlayAudio(){
+                document.getElementById("musical").play();
+            }
+        </script>
+</body>
+
+</html>

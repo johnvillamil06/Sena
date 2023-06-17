@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2 css</title>
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+
+</head>
+
+<body onclick="PlayAudio()">
+
+    <div>
+        <h1 class="titulo">Trabajo del SENA</h1>
+        <div class="contenedorimagen">
+            <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/" target="_blank">
+                <img class="imagen" src="./assets/img/sena.png" alt="sergio.png">
+            </a>
+        </div>
+        <hr>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="pagina2.html">Inicio</a></li>
+                    <li><a href="tabla.html">Tablas</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <div class="contenedorinfo">
+            <main>
+                <p class="info">
+                    Contamos con:
+
+                    Personería jurídica, Patrimonio propio e independiente, Autonomía administrativa.
+                    Ofrecemos formación gratuita a millones de colombianos que se benefician con programas técnicos,
+                    tecnológicos y complementarios que enfocados en el desarrollo económico, científico y social del
+                    país, entran a fortalecer las actividades productivas de las empresas y de la industria, para
+                    obtener mejor competitividad y mayores resultados en los diferentes mercados.
+                </p>
+                <p class="info">
+                    Autorizada por el Estado para invertir en infraestructura necesaria para mejorar el desarrollo
+                    social y técnico de los trabajadores en las diferentes regiones, a través de formación
+                    profesional integral que logra incorporarse con las metas del Gobierno Nacional, mediante el
+                    cubrimiento de las necesidades específicas de recurso humano en las empresas. Por medio de la
+                    vinculación al mercado laboral -bien sea como empleado o subempleado-, con grandes oportunidades
+                    para el desarrollo empresarial, comunitario y tecnológico.
+                </p>
+                <p class="info">
+                    La Entidad más querida por los colombianos funciona desde su creación en permanente alianza entre
+                    el Gobierno, los empresarios y los trabajadores, con el firme propósito de aumentar la capacidad de
+                    progreso en Colombia a través del incremento de la productividad en las empresas y regiones, sin
+                    dejar de lado la inclusión social, alineados con la política nacional: Más empleo y menos
+                    pobreza. Por tal razón, se generan continuamente programas y proyectos de responsabilidad social,
+                    empresarial, formación, innovación, internacionalización y transferencia de conocimientos y
+                    tecnologías.
+                </p>
+                <img class="publicidad" src="/assets/img/publicidad.png" alt="publicidad.png">
+            </main>
+            <div>
+                <iframe class="video" src="https://www.youtube.com/embed/k5rZk-qC0JM" title="YouTube video player"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+                <iframe class="video" src="https://www.youtube.com/embed/97xDc4DKwUE" title="YouTube video player"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <footer>
+            <p>&copy Derechos Reservados Grupo de Analisis y Dllo SAS Bogota - 2023</p>
+        </footer>
+    </div>
+    <audio id="musical" loop>
+        <source src="assets/audio/instrumental.mp3" type="audio/mpeg">
+        Este navegador no acepta formatos de audio
+    </audio>
+    <script>
+        function PlayAudio(){
+            document.getElementById("musical").play();
+        }
+    </script>
+</body>
+
+</html>
